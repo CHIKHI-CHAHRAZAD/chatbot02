@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('assets/blue.jpg');
+        }
+        h1 {
+            color: rgb(5, 5, 120);
+            text-align: center;
+        }
+        .messages {
+            border: 1px solid #ccc;
+            width: 50%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .user-message {
+            text-align: left;
+            color: black;
+            background-color: #f2f2f2;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .bot-message {
+            text-align: left;
+            color: white;
+            background-color: rgb(5, 5, 120);
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .input-container {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: rgb(5, 5, 120);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <h1>I am here to answer your questions</h1>
+    <div class="messages" id="messages">
+    </div>
+    <div class="input-container">
+        <form id="message-form">
+            <input type="text" id="user-message" placeholder="Type your questions...">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>

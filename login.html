@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('assets/blue.jpg');
+        }
+        h1 {
+            color: rgb(5, 5, 120);
+            text-align: center;
+        }
+        p {
+            color: rgb(249, 248, 250);
+            text-align: center;
+        }
+        form {
+            margin-top: 50px;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: rgb(5, 5, 120);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome again </h1>
+    <form action="chat.html" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
